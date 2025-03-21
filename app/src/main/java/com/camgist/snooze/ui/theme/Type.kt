@@ -6,53 +6,58 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
-// Set of Material typography styles to start with
+// Defines a modern, clean typography system with improved readability and hierarchy
 val Typography = Typography(
+    // Large headings - Used for main screen headers and clock display
     displayLarge = TextStyle(
         fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 57.sp,
-        lineHeight = 64.sp,
-        letterSpacing = (-0.25).sp
+        fontWeight = FontWeight.Bold,
+        fontSize = 64.sp,
+        lineHeight = 72.sp,
+        letterSpacing = (-1.5).sp
     ),
     displayMedium = TextStyle(
         fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 45.sp,
-        lineHeight = 52.sp,
-        letterSpacing = 0.sp
+        fontWeight = FontWeight.Bold,
+        fontSize = 48.sp,
+        lineHeight = 56.sp,
+        letterSpacing = (-0.5).sp
     ),
     displaySmall = TextStyle(
         fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 36.sp,
-        lineHeight = 44.sp,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 40.sp,
+        lineHeight = 48.sp,
         letterSpacing = 0.sp
     ),
+    
+    // Headlines - Used for screen titles and section headers
     headlineLarge = TextStyle(
         fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
+        fontWeight = FontWeight.SemiBold,
         fontSize = 32.sp,
         lineHeight = 40.sp,
         letterSpacing = 0.sp
     ),
     headlineMedium = TextStyle(
         fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
+        fontWeight = FontWeight.SemiBold,
         fontSize = 28.sp,
         lineHeight = 36.sp,
         letterSpacing = 0.sp
     ),
     headlineSmall = TextStyle(
         fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
+        fontWeight = FontWeight.SemiBold,
         fontSize = 24.sp,
         lineHeight = 32.sp,
         letterSpacing = 0.sp
     ),
+    
+    // Titles - Used for section titles and card headers
     titleLarge = TextStyle(
         fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
+        fontWeight = FontWeight.Medium,
         fontSize = 22.sp,
         lineHeight = 28.sp,
         letterSpacing = 0.sp
@@ -60,17 +65,19 @@ val Typography = Typography(
     titleMedium = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Medium,
-        fontSize = 16.sp,
+        fontSize = 18.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.15.sp
     ),
     titleSmall = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Medium,
-        fontSize = 14.sp,
-        lineHeight = 20.sp,
+        fontSize = 16.sp,
+        lineHeight = 22.sp,
         letterSpacing = 0.1.sp
     ),
+    
+    // Body - Used for main content text
     bodyLarge = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Normal,
@@ -92,6 +99,8 @@ val Typography = Typography(
         lineHeight = 16.sp,
         letterSpacing = 0.4.sp
     ),
+    
+    // Labels - Used for buttons, chips, and smaller UI elements
     labelLarge = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Medium,
@@ -109,8 +118,8 @@ val Typography = Typography(
     labelSmall = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Medium,
-        fontSize = 11.sp,
-        lineHeight = 16.sp,
+        fontSize = 10.sp,
+        lineHeight = 14.sp,
         letterSpacing = 0.5.sp
     )
 )
